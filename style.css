@@ -9,9 +9,16 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   margin: 0px;
   padding: 0px;
   width: 100vw;
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 * {
@@ -436,6 +443,10 @@ header #headerContainer nav ul li {
   background-color: #fff;
 }
 
+#about {
+  text-align: justify;
+}
+
 #about h3 {
   font-size: 25px;
   margin-left: 60px;
@@ -443,8 +454,14 @@ header #headerContainer nav ul li {
 
 @media screen and (max-width: 900px) {
   #about h3 {
-    text-align: center;
     margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #about .introduce {
+    margin-bottom: 50px;
   }
 }
 
@@ -454,8 +471,39 @@ header #headerContainer nav ul li {
   margin: 0 100px;
 }
 
+@media screen and (max-width: 900px) {
+  #about .introduce p {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #about .introduce p {
+    width: 95%;
+  }
+}
+
 #about .about-contents {
   padding-left: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  #about .about-contents {
+    width: 560px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #about .about-contents {
+    flex-direction: column;
+    width: 80%;
+  }
 }
 
 #about .about-item {
@@ -466,7 +514,22 @@ header #headerContainer nav ul li {
   opacity: 0;
 }
 
-#about .about-item img {
+@media screen and (max-width: 900px) {
+  #about .about-item {
+    width: 40%;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #about .about-item {
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+#about .about-item-img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -475,19 +538,44 @@ header #headerContainer nav ul li {
   object-fit: cover;
 }
 
-#about .about-item img:hover {
+@media screen and (max-width: 900px) {
+  #about .about-item-img {
+    margin-bottom: 15px;
+  }
+}
+
+#about .about-item-img:hover {
   border-radius: 0;
   width: 200px;
   height: calc(200px * 0.56);
   transition: 0.3s ease-out;
 }
 
-#about .about-item .about-item-text {
+#about .about-item-text {
   border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 900px) {
+  #about .about-item-text {
+    border-bottom: none;
+  }
 }
 
 #about .about-item h4 {
   margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  #about .about-item h4 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #about .about-item h4 {
+    text-align: left;
+  }
 }
 
 #about .about-item p {
@@ -499,85 +587,18 @@ header #headerContainer nav ul li {
   margin-left: 80px;
 }
 
+@media screen and (max-width: 900px) {
+  #about .about-right {
+    margin-left: 0;
+  }
+}
+
 #about .about-left.show {
   animation: slideLeft 1s ease-in-out forwards;
 }
 
 #about .about-right.show {
   animation: slideRight 1s ease-in-out forwards;
-}
-
-#about #character {
-  margin-top: 100px;
-}
-
-#about ul {
-  margin-left: 90px;
-}
-
-#about ul li {
-  font-weight: bold;
-  margin-bottom: 10px;
-  opacity: 0;
-}
-
-#about ul li.show {
-  animation: slideUp 1s ease-in-out forwards;
-}
-
-#about ul span {
-  margin-left: 10px;
-  font-size: 18;
-  color: red;
-  opacity: 0;
-}
-
-#about ul span.show {
-  animation: slideUp 1s ease-in-out forwards;
-}
-
-@media screen and (max-width: 900px) {
-  #about #about-contents {
-    width: 560px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-  #about #about-contents .about-item {
-    width: 40%;
-    flex-direction: column;
-    margin: 0 0 20px 0;
-    text-align: center;
-    font-size: 12px;
-  }
-  #about ul {
-    width: 560px;
-    margin: 0 auto;
-    text-align: center;
-    list-style: none;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  #about-contents {
-    flex-direction: column;
-    width: 80%;
-  }
-  #about-contents .about-item {
-    width: 100%;
-    margin: 0 auto 20px auto;
-    font-size: 16px;
-  }
-  ul {
-    width: calc(80% - 20px);
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  ul li {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
 }
 
 #service .service-contents {

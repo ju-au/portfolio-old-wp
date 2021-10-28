@@ -28,44 +28,44 @@
         <h3>経歴</h3>
         <div id="about-contents" class="about-contents">
           <div class="about-item about-left scroll">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/index/waseda.jpg" alt="">
+            <img class="about-item-img" src="<?php echo get_template_directory_uri(); ?>/images/index/waseda.jpg" alt="">
             <div class="about-item-text">
               <h4>2007年 早稲田大学第一文学卒業</h4>
               <p>日本史学を専攻。部活では体育会航空部に所属し、自家用操縦士（上級滑空機）と教官の資格を獲得。「相談しやすい先輩」との評価を得る。</p>
             </div>
           </div>
           <div class="about-item about-right scroll">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/index/fsol.jpg">
+            <img class="about-item-img" src="<?php echo get_template_directory_uri(); ?>/images/index/fsol.jpg">
             <div class="about-item-text">
-              <h4>大手SIer企業に就職</h4>
+              <h4>2007年～ 大手SIer企業に就職</h4>
               <p>プログラムに関することを叩き込まれる。主に上流工程と、お客様とのコミュニケーション方法を学ぶ。</p>
             </div>
           </div>
           <div class="about-item about-left scroll">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/index/aus1.JPG" alt="">
+            <img class="about-item-img" src="<?php echo get_template_directory_uri(); ?>/images/index/aus1.JPG" alt="">
             <div class="about-item-text">
-              <h4>ワーキングホリデーで渡豪</h4>
+              <h4>2009年～ ワーキングホリデーで渡豪</h4>
               <p>2年間の海外経験を通じ、多文化への理解を習得。多面的なものの見方や、相手の立場に立って物を考える癖を身に着ける。</p>
             </div>
           </div>
           <div class="about-item about-right scroll">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/index/chef.JPG" alt="">
+            <img class="about-item-img" src="<?php echo get_template_directory_uri(); ?>/images/index/chef.JPG" alt="">
             <div class="about-item-text">
-              <h4>日本橋で板前修業</h4>
+              <h4>2011年～ 日本橋で板前修業</h4>
               <p>移住を目指し、ビザ取得に有利な料理人の道に入る。昔ながらの職人の世界に揉まれ、根気と根性を叩き込まれる。</p>
             </div>
           </div>
           <div class="about-item about-left scroll">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/index/aus2.jpg" alt="">
+            <img class="about-item-img" src="<?php echo get_template_directory_uri(); ?>/images/index/aus2.jpg" alt="">
             <div class="about-item-text">
-              <h4>再度渡豪し、副料理長に</h4>
+              <h4>2014年 再度渡豪し、副料理長に</h4>
               <p>責任感を買われ、副料理長に抜擢される。どのように説明すれば分かりやすいかを常に意識しながら、新人や後輩の教育も行う。</p>
             </div>
           </div>
           <div class="about-item about-right scroll">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/index/cording.JPG" alt="">
+            <img class="about-item-img" src="<?php echo get_template_directory_uri(); ?>/images/index/cording.JPG" alt="">
             <div class="about-item-text">
-              <h4>フリーランスとして活動</h4>
+              <h4>2020年～ フリーランスとして活動</h4>
               <p>持ち前の自走力を発揮し、全て単独でWeb制作を学ぶ。一度ご依頼いただいたお客様には信用を頂き、プロジェクト後も継続してお仕事を頂くことが多い。</p>
             </div>
           </div>

@@ -1,48 +1,92 @@
 #about {
+  text-align: justify;
   h3 {
     font-size: 25px;
     margin-left: 60px;
     @include tab {
-      text-align: center;
       margin-left: 0;
+      text-align: center;
     }
   }
   .introduce {
+    @include tab {
+      margin-bottom: 50px;
+    }
     p {
       border: 1px solid #000;
       padding: 20px;
       margin: 0 100px;
+      @include tab {
+        width: 80%;
+        margin: 0 auto;
+      }
+      @include sp {
+        width: 95%;
+      }
     }
   }
   .about-contents {
     padding-left: 50px;
+    @include tab {
+      width: $sp;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+    @include sp {
+      flex-direction: column;
+      width: 80%;
+    }
   }
   .about-item {
     width: 700px;
     display: flex;
-    // justify-content: left;
     align-items: center;
     margin-bottom: 30px;
     opacity: 0;
-    img {
+    @include tab {
+      width: 40%;
+      flex-direction: column;
+      margin: 0 0 20px 0;
+    }
+    @include sp {
+      width: 100%;
+      margin: 0 auto 30px auto;
+    }
+    &-img {
       width: 90px;
       height: 90px;
       border-radius: 50%;
       margin-right: 20px;
       transition: 0.3s ease-out;
       object-fit: cover;
+      @include tab {
+        margin-bottom: 15px;
+      }
+      &:hover {
+        border-radius: 0;
+        width: 200px;
+        height: calc(200px * 0.56);
+        transition: 0.3s ease-out;
+      }
     }
-    img:hover {
-      border-radius: 0;
-      width: 200px;
-      height: calc(200px * 0.56);
-      transition: 0.3s ease-out;
-    }
-    .about-item-text {
+    &-text {
       border-bottom: 1px solid black;
+      @include tab {
+        border-bottom: none;
+      }
     }
     h4 {
       margin: 0;
+      @include tab {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      @include sp {
+        text-align: left;
+      }
     }
     p {
       margin: 0;
@@ -51,77 +95,14 @@
   }
   .about-right {
     margin-left: 80px;
+    @include tab {
+      margin-left: 0;
+    }
   }
   .about-left.show {
     animation: slideLeft 1s ease-in-out forwards;
   }
   .about-right.show {
     animation: slideRight 1s ease-in-out forwards;
-  }
-  #character {
-    margin-top: 100px;
-  }
-  ul {
-    margin-left: 90px;
-    li {
-      font-weight: bold;
-      margin-bottom: 10px;
-      opacity: 0;
-    }
-    li.show {
-      animation: slideUp 1s ease-in-out forwards;
-    }
-    span {
-      margin-left: 10px;
-      font-size: 18;
-      color: red;
-      opacity: 0;
-    }
-    span.show {
-      animation: slideUp 1s ease-in-out forwards;
-    }
-  }
-  @include tab {
-    #about-contents {
-      width: $sp;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      .about-item {
-        width: 40%;
-        flex-direction: column;
-        margin: 0 0 20px 0;
-        text-align: center;
-        font-size: 12px;
-        // border: none;
-      }
-    }
-    ul {
-      width: $sp;
-      margin: 0 auto;
-      text-align: center;
-      list-style: none;
-    }
-  }
-}
-@include sp {
-  #about-contents {
-    flex-direction: column;
-    width: 80%;
-    .about-item {
-      width: 100%;
-      margin: 0 auto 20px auto;
-      font-size: 16px;
-    }
-  }
-  ul {
-    width: calc(80% - 20px);
-    margin: 0 auto;
-    padding: 0 10px;
-    li {
-      font-size: 18px;
-      margin-bottom: 40px;
-    }
   }
 }

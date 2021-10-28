@@ -74,9 +74,13 @@ html {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   margin: 0px;
   padding: 0px;
   width: 100vw;
+  @include sp {
+    font-size: 20px;
+  }
 }
 * {
   box-sizing: border-box;
