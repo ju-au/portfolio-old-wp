@@ -21,7 +21,7 @@
         <h3>自己紹介</h3>
         <p>こんにちは。フリーランスとしてWeb制作をしてます、上田隼也（ウエダジュンヤ）と申します。「聞き上手・説明上手・誠実」を心がけ、あなたのビジネスのお役に立てるWebサイトの構築をいたします。<br><br>
           性格は特に真面目で、人の手助けをしてあげたいという気持ちが強い傾向があります。そのおかげもあって、一度ご依頼いただいた方から再度ご依頼を受けたり、サイト以外の事でもご相談を頂いたりすることが多いのが自慢です。<br><br>
-          
+
           資格：基本情報技術者、調理師免許、自家用操縦士（滑空機上級）、操縦教育証明、TOEIC 810点、IELTS 6.0</p>
       </div>
       <div class="history">
@@ -81,23 +81,57 @@
     <div class="container">
       <h2>Service</h2>
       <div class="service-contents">
-        <div class="service-item lp scroll">
-          <div class="service-text lp-text scroll">
-            <h3>LP作成</h3>
-            <p>お客様のゴール（成約増、お問い合わせ増など）に沿った効果的なLPを作成いたします
+        <div class="service-item service-item-01 scroll">
+          <div class="service-text service-text-01 scroll">
+            <h3>Webサイト制作</h3>
+            <p>
+              高品質なホームページを作成いたします。<br>
+              制作後の編集の必要がない方や、とりあえずホームページを作りたい方へ。
             </p>
           </div>
         </div>
-        <div class="service-item cd scroll">
-          <div class="service-text cd-text scroll">
-            <h3>コーディング代行</h3>
-            <p>お客様のデザイン・素材を基に、細部まで正確にWebサイトを構築いたします</p>
+        <div class="service-item service-item-02 scroll">
+          <div class="service-text service-text-02 scroll">
+            <h3>WordPress<br>オリジナルテーマ構築</h3>
+            <p>
+              カスタマイズ自由自在！<br>
+              ブログで情報発信をしたい方や、ご自身でホームページを編集したい方へ。</p>
           </div>
         </div>
-        <div class="service-item re scroll">
-          <div class="service-text re-text scroll">
-            <h3>レスポンシブ対応</h3>
-            <p>画面のサイズに応じてレイアウトを変更するよう設定します</p>
+        <div class="service-item service-item-03 scroll">
+          <div class="service-text service-text-03 scroll">
+            <h3>ランディングページ<br>（LP）作成</h3>
+            <p>
+              成約率の高いランディングページを作成いたします！<br>
+              ご自身の商品やサービスを、確実にお客様にお届けしたい方へ。
+            </p>
+          </div>
+        </div>
+        <div class="service-item service-item-04 scroll">
+          <div class="service-text service-text-04 scroll">
+            <h3>コーディング代行</h3>
+            <p>
+              あなたのデザインを忠実に再現いたします。<br>
+              提携していただけるパートナー様も募集しております。
+            </p>
+          </div>
+        </div>
+        <div class="service-item service-item-05 scroll">
+          <div class="service-text service-text-05 scroll">
+            <h3>PC、SP画面対応<br>（レスポンシブ対応）</h3>
+            <p>
+              ホームページはスマホから見る時代！<br>
+              PCサイトとスマホサイトの表示を、美しく切り替えます。
+            </p>
+          </div>
+        </div>
+        <div class="service-item service-item-06 scroll">
+          <div class="service-text service-text-06 scroll">
+            <h3>検索エンジン対策<br>（内部SEO対策）</h3>
+            <p>
+              あなたのホームページを、検索結果の上位へ！<br>
+              お客様の目に留まり、クリックしていただけるよう対策を講じます。
+            </p>
           </div>
         </div>
       </div>

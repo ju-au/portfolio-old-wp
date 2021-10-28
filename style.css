@@ -604,73 +604,233 @@ header #headerContainer nav ul li {
 #service .service-contents {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 0 auto 70px auto;
 }
 
-#service .service-contents .service-item {
+@media screen and (max-width: 900px) {
+  #service .service-contents {
+    margin-top: 50px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-contents {
+    width: 95%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+#service .service-item {
   background: linear-gradient(45deg, rgba(113, 191, 255, 0.5), white);
   border-radius: 50%;
-  width: 230px;
-  height: 230px;
+  width: 270px;
+  height: 270px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  text-align: justify;
   transform: translateX(80px);
   opacity: 0;
 }
 
-#service .service-contents .service-item .service-text {
-  width: 200px;
-  opacity: 0;
-  transform: translate(3px, -30px);
+@media screen and (max-width: 560px) {
+  #service .service-item {
+    width: 80%;
+    height: 76vw;
+    margin: 0 auto 50px auto;
+  }
 }
 
-#service .service-contents .service-item .service-text h3 {
-  font-size: 22px;
-}
-
-#service .service-contents .service-item .service-text p {
-  margin: 0 auto;
-  width: 170px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-#service .service-contents .service-item .lp-text.show {
-  transform: translateY(0);
-  opacity: 1;
-  transition: 1s 0.5s ease-out;
-}
-
-#service .service-contents .service-item .cd-text.show {
-  transform: translateY(0);
-  opacity: 1;
-  transition: 1s 0.5s ease-out;
-}
-
-#service .service-contents .service-item .re-text.show {
-  transform: translateY(0);
-  opacity: 1;
-  transition: 1s 0.8s ease-out;
-}
-
-#service .service-contents .lp.show {
+#service .service-item.show {
   transform: translateX(0);
   opacity: 1;
   transition: 0.8s ease-out;
 }
 
-#service .service-contents .cd.show {
-  transform: translateX(0);
-  opacity: 1;
-  transition: 0.8s 0.3s ease-out;
+#service .service-item-01.show {
+  transition-delay: 0s;
 }
 
-#service .service-contents .re.show {
-  transform: translateX(0);
+#service .service-item-02.show {
+  transition-delay: 0.2s;
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-item-02.show {
+    transition-delay: 0s;
+  }
+}
+
+#service .service-item-03.show {
+  transition-delay: 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+  #service .service-item-03.show {
+    transition-delay: 0s;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-item-03.show {
+    transition-delay: 0s;
+  }
+}
+
+#service .service-item-04.show {
+  transition-delay: 0s;
+}
+
+@media screen and (max-width: 900px) {
+  #service .service-item-04.show {
+    transition-delay: 0.2s;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-item-04.show {
+    transition-delay: 0s;
+  }
+}
+
+#service .service-item-05.show {
+  transition-delay: 0.2s;
+}
+
+@media screen and (max-width: 900px) {
+  #service .service-item-05.show {
+    transition-delay: 0s;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-item-05.show {
+    transition-delay: 0s;
+  }
+}
+
+#service .service-item-06.show {
+  transition-delay: 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+  #service .service-item-06.show {
+    transition-delay: 0.2s;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-item-06.show {
+    transition-delay: 0s;
+  }
+}
+
+#service .service-text {
+  width: 200px;
+  opacity: 0;
+  transform: translate(3px, -30px);
+}
+
+#service .service-text h3 {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-top: 30px;
+}
+
+#service .service-text p {
+  margin: 0 auto;
+  width: 200px;
+}
+
+#service .service-text.show {
+  transform: translateY(0);
   opacity: 1;
-  transition: 0.8s 0.6s ease-out;
+  transition: 1s ease-out;
+}
+
+#service .service-text-01.show {
+  transition-delay: 0.5s;
+}
+
+#service .service-text-02.show {
+  transition-delay: 0.7s;
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-text-02.show {
+    transition-delay: 0.5s;
+  }
+}
+
+#service .service-text-03.show {
+  transition-delay: 0.9s;
+}
+
+@media screen and (max-width: 900px) {
+  #service .service-text-03.show {
+    transition-delay: 0.5s;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-text-03.show {
+    transition-delay: 0.5s;
+  }
+}
+
+#service .service-text-04.show {
+  transition-delay: 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+  #service .service-text-04.show {
+    transition-delay: 0.7s;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-text-04.show {
+    transition-delay: 0.5s;
+  }
+}
+
+#service .service-text-05.show {
+  transition-delay: 0.7s;
+}
+
+@media screen and (max-width: 900px) {
+  #service .service-text-05.show {
+    transition-delay: 0.5s;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-text-05.show {
+    transition-delay: 0.5s;
+  }
+}
+
+#service .service-text-06.show {
+  transition-delay: 0.9s;
+}
+
+@media screen and (max-width: 900px) {
+  #service .service-text-06.show {
+    transition-delay: 0.7s;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #service .service-text-06.show {
+    transition-delay: 0.5s;
+  }
 }
 
 #service a {
@@ -681,36 +841,8 @@ header #headerContainer nav ul li {
 }
 
 @media screen and (max-width: 900px) {
-  #service .service-contents {
-    margin-top: 50px;
-    width: 560px;
-    flex-wrap: wrap;
-  }
-  #service .service-contents .service-item .service-text p {
-    font-size: 18px;
-  }
   #service a {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  #service .service-contents {
-    width: 80%;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  #service .service-contents .service-item {
-    margin: 0 auto 50px auto;
-  }
-  #service .service-contents .cd.show {
-    transition: 0.8s ease-out;
-  }
-  #service .service-contents .re.show {
-    transition: 0.8s ease-out;
-  }
-  #service a {
-    font-size: 20px;
   }
 }
 

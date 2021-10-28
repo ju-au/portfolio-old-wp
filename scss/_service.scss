@@ -2,62 +2,151 @@
     .service-contents {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         margin: 0 auto 70px auto;
-        .service-item {
-            background: linear-gradient(45deg, rgba(113, 191, 255, 0.5), white);
-            border-radius: 50%;
-            width: 230px;
-            height: 230px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            transform: translateX(80px);
-            opacity: 0;
-            .service-text {
-                width: 200px;
-                opacity: 0;
-                transform: translate(3px, -30px);
-                h3 {
-                    font-size: 22px;
-                }
-                p {
-                    margin: 0 auto;
-                    width: 170px;
-                    font-size: 12px;
-                    font-weight: bold;
-                }
-            }
-            .lp-text.show {
-                transform: translateY(0);
-                opacity: 1;
-                transition: 1s 0.5s ease-out;
-            }
-            .cd-text.show {
-                transform: translateY(0);
-                opacity: 1;
-                transition: 1s 0.5s ease-out;
-            }
-            .re-text.show {
-                transform: translateY(0);
-                opacity: 1;
-                transition: 1s 0.8s ease-out;
-            }
+        @include tab {
+            margin-top: 50px;
+            width: 80%;
         }
-        .lp.show {
+        @include sp {
+            width: 95%;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    }
+    .service-item {
+        background: linear-gradient(45deg, rgba(113, 191, 255, 0.5), white);
+        border-radius: 50%;
+        width: 270px;
+        height: 270px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        transform: translateX(80px);
+        opacity: 0;
+        @include sp {
+            width: 80%;
+            height: 76vw;
+            margin: 0 auto 50px auto;
+        }
+        &.show {
             transform: translateX(0);
             opacity: 1;
             transition: 0.8s ease-out;
         }
-        .cd.show {
-            transform: translateX(0);
-            opacity: 1;
-            transition: 0.8s 0.3s ease-out;
+        &-01.show {
+            transition-delay: 0s;
         }
-        .re.show {
-            transform: translateX(0);
+        &-02.show {
+            transition-delay: 0.2s;
+            @include sp {
+                transition-delay: 0s;
+            }
+        }
+        &-03.show {
+            transition-delay: 0.4s;
+            @include tab {
+                transition-delay: 0s;
+            }
+            @include sp {
+                transition-delay: 0s;
+            }
+        }
+        &-04.show {
+            transition-delay: 0s;
+            @include tab {
+                transition-delay: 0.2s;
+            }
+            @include sp {
+                transition-delay: 0s;
+            }
+        }
+        &-05.show {
+            transition-delay: 0.2s;
+            @include tab {
+                transition-delay: 0s;
+            }
+            @include sp {
+                transition-delay: 0s;
+            }
+        }
+        &-06.show {
+            transition-delay: 0.4s;
+            @include tab {
+                transition-delay: 0.2s;
+            }
+            @include sp {
+                transition-delay: 0s;
+            }
+        }
+    }
+    .service-text {
+        width: 200px;
+        opacity: 0;
+        transform: translate(3px, -30px);
+        h3 {
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            margin-top: 30px;
+        }
+        p {
+            margin: 0 auto;
+            width: 200px;
+        }
+        &.show {
+            transform: translateY(0);
             opacity: 1;
-            transition: 0.8s 0.6s ease-out;
+            transition: 1s ease-out;
+        }
+        &-01.show {
+            transition-delay: 0.5s;
+        }
+        &-02.show {
+            transition-delay: 0.7s;
+            @include sp {
+                transition-delay: 0.5s;
+            }
+        }
+        &-03.show {
+            transition-delay: 0.9s;
+            @include tab {
+                transition-delay: 0.5s;
+            }
+            @include sp {
+                transition-delay: 0.5s;
+            }
+        }
+        &-04.show {
+            transition-delay: 0.5s;
+            @include tab {
+                transition-delay: 0.7s;
+            }
+            @include sp {
+                transition-delay: 0.5s;
+            }
+        }
+        &-05.show {
+            transition-delay: 0.7s;
+            @include tab {
+                transition-delay: 0.5s;
+            }
+            @include sp {
+                transition-delay: 0.5s;
+            }
+        }
+        &-06.show {
+            transition-delay: 0.9s;
+            @include tab {
+                transition-delay: 0.7s;
+            }
+            @include sp {
+                transition-delay: 0.5s;
+            }
         }
     }
     a {
@@ -65,41 +154,8 @@
         float: right;
         margin: 0 30px 0 0;
         text-decoration-line: underline;
-    }
-    @include tab {
-        .service-contents {
-            margin-top: 50px;
-            width: $sp;
-            flex-wrap: wrap;
-            .service-item {
-                .service-text {
-                    p {
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
-        a {
+        @include tab {
             text-align: center;
-        }
-    }
-    @include sp {
-        .service-contents {
-            width: 80%;
-            flex-direction: column;
-            margin: 0 auto;
-            .service-item {
-                margin: 0 auto 50px auto;
-            }
-            .cd.show {
-                transition: 0.8s ease-out;
-            }
-            .re.show {
-                transition: 0.8s ease-out;
-            }
-        }
-        a {
-            font-size: 20px;
         }
     }
 }
