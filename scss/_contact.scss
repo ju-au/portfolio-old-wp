@@ -1,0 +1,74 @@
+#contact {
+    .wrapper {
+        margin-bottom: 0px;
+        padding: 70px 0 0 0;
+        form {
+            @include form;
+            #form-contents {
+                @include form-contents;
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+                #queryName,
+                #queryEmail {
+                    width: 400px;
+                    line-height: 25px;
+                    border-radius: 4px;
+                }
+                #queryMessage {
+                    width: 400px;
+                    border-radius: 4px;
+                    border: 2px solid black;
+                }
+                .blank-message {
+                    visibility: hidden;
+                }
+                .showBlankMessage {
+                    visibility: visible;
+                    font-size: 16px;
+                    color: red;
+                    margin-bottom: 25px;
+                }
+                #submit {
+                    width: 400px;
+                    border-radius: 4px;
+                    background-color: white;
+                    font-weight: bold;
+                    padding: 10px 0;
+                }
+                @include tab {
+                    #queryName,
+                    #queryEmail {
+                        height: 30px;
+                        font-size: 20px;
+                    }
+                    #queryMessage {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        @include sp {
+            form {
+                width: 100%;
+                padding: 50px 0;
+                margin: 0;
+                #form-contents {
+                    width: 85%;
+                    margin: 0 auto;
+                    p,
+                    #queryName,
+                    #queryEmail,
+                    #queryMessage,
+                    #submit {
+                        width: 100%;
+                        // margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

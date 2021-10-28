@@ -1,0 +1,176 @@
+header {
+    @include header-footer;
+    position: fixed;
+    height: 65px;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    opacity: 0;
+    animation: slideDown 0.5s 0.3s ease-out forwards;
+    #headerContainer {
+        width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        h1 {
+            font-size: 40px;
+            line-height: 40px;
+            margin-top: 12px;
+            margin-left: 30px;
+        }
+        #nav-input,
+        #nav-open,
+        #nav-close {
+            display: none;
+        }
+        nav {
+            margin-top: 28px;
+            margin-right: 20px;
+            ul {
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    @include tab {
+        height: 100px;
+        width: 100vw;
+        #headerContainer {
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            h1 {
+                margin: 12px 0 10px 0;
+            }
+            nav {
+                margin: 0;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                }
+                li {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    @include sp {
+        height: 40px;
+        #headerContainer {
+            flex-direction: row;
+            h1 {
+                font-size: 23px;
+                margin: 0 auto;
+            }
+            #nav-drawer {
+                position: relative;
+                .nav-unshown {
+                    transform: translateX(560px);
+                }
+                #nav-input {
+                    display: block;
+                }
+                #nav-open {
+                    margin-top: -10px;
+                    margin-right: 20px;
+                    display: block;
+                    width: 30px;
+                    height: 22px;
+                    position: relative;
+                    z-index: 9999;
+                    span {
+                        position: absolute;
+                        height: 3px;
+                        width: 25px;
+                        border-radius: 3px;
+                        background: #555;
+                        display: block;
+                        content: "";
+                        cursor: pointer;
+                    }
+                    #span1 {
+                        top: 0px;
+                        transition: 0.4s ease-out;
+                    }
+                    #span2 {
+                        top: 8px;
+                        transition: 0.4s ease-out;
+                    }
+                    #span3 {
+                        top: 16px;
+                        transition: 0.4s ease-out;
+                    }
+                }
+                #nav-close {
+                    display: block;
+                    position: fixed;
+                    z-index: 9;
+                    top: 0;
+                    left: 0;
+                    width: 560px;
+                    height: 100vh;
+                    background: black;
+                    opacity: 0;
+                    transition: 0.3s ease-in-out;
+                }
+                #nav-content {
+                    overflow: auto;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 99;
+                    width: 40%;
+                    max-width: 250px;
+                    height: 100vh;
+                    background: #fff;
+                    opacity: 0.8;
+                    transition: 0.3s ease-in-out;
+                    transform: translateX(560px);
+                    ul {
+                        margin-top: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        li {
+                            width: 75px;
+                            margin: 0 auto 20px auto;
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                }
+                #nav-input:checked ~ #nav-open {
+                    span {
+                        top: 8px;
+                    }
+                    #span1 {
+                        transform: rotateZ(45deg);
+                        transition: 0.4s ease-out;
+                    }
+                    #span2 {
+                        transform: rotateZ(-45deg);
+                        transition: 0.4s ease-out;
+                    }
+                    #span3 {
+                        transform: rotateZ(45deg);
+                        transition: 0.4s ease-out;
+                    }
+                }
+                #nav-input:checked ~ #nav-close {
+                    opacity: 0.5;
+                    transform: translateX(0);
+                }
+                #nav-input:checked ~ #nav-content {
+                    transform: translateX(0%);
+                    box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+                }
+            }
+        }
+    }
+}
+
+#bg-img {
+    @include bg-img;
+}

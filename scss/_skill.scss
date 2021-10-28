@@ -1,0 +1,46 @@
+#skills {
+    .skills-contents {
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        margin-bottom: -30px;
+        .skills-item {
+            margin-top: 30px;
+            width: 200px;
+            height: 140px;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 60px;
+            .lang {
+                font-weight: 1000;
+                line-height: 80px;
+                font-size: 30px;
+            }
+            #html,
+            #css,
+            #php {
+                letter-spacing: 15px;
+            }
+            #js {
+                line-height: 40px;
+            }
+        }
+    }
+    @include tab {
+        .skills-contents {
+            width: 100vw;
+            max-width: 700px;
+        }
+    }
+    @include sp {
+        .skills-contents {
+            .skills-item {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

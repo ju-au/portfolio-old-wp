@@ -1,0 +1,89 @@
+footer {
+    @include header-footer;
+    margin-bottom: 0px;
+    opacity: 0;
+    &.show {
+        animation: slideUp 1s ease-out forwards;
+    }
+    #footer-container {
+        width: 900px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        h2 {
+            font-size: 40px;
+            padding-left: 15px;
+        }
+        #thanks {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 60px 0 40px 0;
+            text-align: center;
+        }
+        #footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            #footer-left {
+                display: flex;
+                #follow-me {
+                    font-weight: bold;
+                    margin: 0 16px;
+                    width: 176px;
+                }
+                .fa-twitter-square {
+                    color: rgb(113, 200, 235);
+                    text-align: center;
+                }
+            }
+            #footer-right {
+                margin-right: 30imi px;
+                line-height: 12px;
+                text-align: end;
+            }
+        }
+    }
+    @include tab {
+        opacity: 1;
+        #footer-container {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                text-align: center;
+            }
+            #footer-bottom {
+                flex-direction: column;
+                align-items: center;
+                #footer-left {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    #follow-me {
+                        width: auto;
+                        font-size: 18px;
+                    }
+                    .fa-twitter-square {
+                        color: rgb(11, 168, 230);
+                    }
+                }
+            }
+        }
+    }
+    @include sp {
+        #footer-container {
+            width: 80%;
+            #thanks {
+                // text-align: left;
+                // line-height: 40px;
+                font-size: 16px;
+            }
+            #footer-bottom {
+                #footer-left {
+                    #follow-me {
+                        margin: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
