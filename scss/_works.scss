@@ -40,11 +40,6 @@
                     height: 100%;
                 }
             }
-            // .works-img-left {
-            // }
-            // .works-img-right {
-            //   transform: translateX(-183px);
-            // }
             .works-text {
                 width: 270px;
                 text-align: left;
@@ -60,10 +55,6 @@
                 span {
                     display: none;
                 }
-                // h3 {
-                //   font-size: 20px;
-                //   margin-top: 0;
-                // }
                 h4 {
                     margin-bottom: -10px;
                 }
@@ -84,49 +75,17 @@
                 padding: 0 0 30px 0;
                 .works-link {
                     transform: translateX(0px);
-                    // .works-img {
-                    // width: calc(300px / 3 * 2);
-                    // height: calc(200px / 3 * 2);
-                    // transform: translateX(140px);
-                    // &.show {
-                    //   transform: scale(1.3);
-                    // }
-                    // }
                 }
-                // .works-img-left {
-                // }
-                // .works-text-right {
-                // }
-                // .works-img-right {
-                //   transform: translateX(-140px);
-                // }
-                // .works-text-left {
-                //   transform: translateX(140px);
-                // }
                 .works-text {
-                    // transform: translateX(-140px);
-                    // visibility: visible;
-                    // width: calc(300px / 3 * 2);
-                    // height: calc(200px / 3 * 2);
-                    // background-color: rgba(128, 128, 128, 0.5);
-                    // border-radius: 4px;
                     visibility: visible;
                     opacity: 1;
                     z-index: 9;
-                    // color: white;
-                    // &.show-tab {
-                    //   // opacity: 0;
-                    //   background-color: transparent;
-                    //   transition: 0.1s ease-in;
-                    //   animation: worksAnime 0s 0.4s ease-out forwards;
-                    // }
                     &.show {
                         padding-left: 50px;
                     }
                     &.show.text-reverse {
                         padding-left: 0;
                     }
-                    // padding: 0;
                     width: 270px;
                     height: auto;
                     transform: translateX(0);
@@ -154,27 +113,6 @@
                         transition: 0.5s ease-in-out;
                     }
 
-                    // h3 {
-                    //   text-align: center;
-                    //   margin-top: 40px;
-                    // }
-                    // // span {
-                    // //   display: block;
-                    // //   text-align: center;
-                    // // }
-                    // h4 {
-                    //   display: none;
-                    //   font-size: 18px;
-                    // }
-
-                    // li {
-                    //   display: none;
-                    //   font-size: 18px;
-                    // }
-                    // p {
-                    //   display: none;
-                    //   font-size: 18px;
-                    // }
                 }
             }
         }
@@ -184,15 +122,9 @@
                 flex-direction: column;
                 margin: 0 auto;
                 .works-link {
-                    // transform: translateX(0);
                     margin: 0 auto;
-                    // &.show {
-                    //   transform: scale(1.3);
-                    // }
                 }
                 .works-text {
-                    // transform: translateX(0);
-                    // transform: translateY(calc(200px / 3 * -2));
                     transform: translateY(50px);
                     margin: 0 auto;
                     padding: 0;
@@ -200,10 +132,7 @@
                     text-align: center;
                     font-size: 20px;
                     &.show {
-                        // transform: translateY(50px);
                         padding: 0;
-                        // margin-bottom: 40px;
-                        // text-align: center;
                     }
                     h3 {
                         font-size: 28px;
@@ -211,18 +140,6 @@
                         text-align: center;
                     }
                 }
-                // .works-text-right {
-                // }
-                // .works-text-left.show-tab {
-                //   transform: translateY(200px);
-                // }
-                // .works-img-right {
-                //   transform: translateY(calc(200px / 3 * -2));
-                // &.show {
-                //   // transform: none;
-                //   transform: scale(1.3);
-                // }
-                // }
             }
         }
     }

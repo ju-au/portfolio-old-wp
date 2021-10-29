@@ -1006,34 +1006,7 @@ header #headerContainer nav ul li {
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-evenly;
-  margin: 0 auto;
-  margin-bottom: -30px;
-}
-
-#skills .skills-contents .skills-item {
-  margin-top: 30px;
-  width: 200px;
-  height: 140px;
-  border: 1px solid black;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-#skills .skills-contents .skills-item .lang {
-  font-weight: 1000;
-  line-height: 80px;
-  font-size: 30px;
-}
-
-#skills .skills-contents .skills-item #html,
-#skills .skills-contents .skills-item #css,
-#skills .skills-contents .skills-item #php {
-  letter-spacing: 15px;
-}
-
-#skills .skills-contents .skills-item #js {
-  line-height: 40px;
+  margin: 30px auto 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -1043,10 +1016,24 @@ header #headerContainer nav ul li {
   }
 }
 
+#skills .skills-item {
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 560px) {
-  #skills .skills-contents .skills-item {
+  #skills .skills-item {
     margin-bottom: 30px;
   }
+}
+
+#skills .skill-desc {
+  margin: 0;
+  padding: 0 15px 15px;
+  text-align: justify;
 }
 
 #contact .wrapper {

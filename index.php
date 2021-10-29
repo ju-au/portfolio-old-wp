@@ -187,20 +187,28 @@
       <h2>Skills</h2>
       <div class="skills-contents">
         <div class="skills-item">
-          <p class="lang" id="html">HTML</p>
+          <h3 class="skill-title">HTML5</h3>
+          <p class="skill-desc">メンテナンス性・可読性の高い、効率のいいHTML設計をいたします。</p>
         </div>
         <div class="skills-item">
-          <p class="lang" id="css">CSS</p>
+          <h3 class="skill-title">CSS3</h3>
+          <p class="skill-desc">主にDart Sassを使用。変数や配列、mixin等を使い、効率よくコーディングいたします。</p>
         </div>
         <div class="skills-item">
-          <p class="lang" id="js">Javascript<br>jQuery</p>
-          <!-- <p class="lang" id="jquery">jQuery</p> -->
+          <h3 class="skill-title">JavaScript</h3>
+          <p class="skill-desc">要素に動きを付けるのはもちろん、DOM操作やAPIの使用も可能です。</p>
         </div>
         <div class="skills-item">
-          <p class="lang" id="wp">Wordpress</p>
+          <h3 class="skill-title">PHP</h3>
+          <p class="skill-desc">HTMLのパーツ化、データや条件に応じた表示の操作、 HTTP通信、などが可能です。</p>
         </div>
         <div class="skills-item">
-          <p class="lang" id="php">PHP</p>
+          <h3 class="skill-title">WordPress</h3>
+          <p class="skill-desc">オリジナルテーマの作成が可能です。セキュリティー対策もお任せください。</p>
+        </div>
+        <div class="skills-item">
+          <h3 class="skill-title">SEO対策</h3>
+          <p class="skill-desc">検索結果の上位に表示させるよう対策致します。</p>
         </div>
       </div>
     </div>
