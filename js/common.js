@@ -1,34 +1,3 @@
-// formの入力チェック
-const submit = document.getElementById('submit');
-submit.addEventListener('click', e => {
-  console.log(e);
-  const blankName = document.getElementById("blankName");
-  const blankEmail = document.getElementById("blankEmail");
-  const blankMessage = document.getElementById("blankMessage");
-  const formName = document.query.queryName.value;
-  const formEmail = document.query.queryEmail.value;
-  const formMessage = document.query.queryMessage.value;
-  //formのそれぞれの項目に対して、関数blankCheckを実行
-  let checkName = blankCheck(blankName, formName);
-  let checkEmail = blankCheck(blankEmail, formEmail);
-  let checkMessage = blankCheck(blankMessage, formMessage);
-  //formの全ての項目に入力されていなければ、ページ遷移を止める
-  if (!checkName || !checkEmail || !checkMessage) {
-  e.preventDefault();
-  };
-});
-//関数blankCheck
-function blankCheck(target, form) {
-  if (form == "") {
-    target.classList.add("showBlankMessage");
-    return false;
-  };
-  target.classList.remove("showBlankMessage");
-  return true;
-};
-
-
-
 //スクロールアニメーション
 const targets = document.querySelectorAll('.scroll');
 const option = {
@@ -44,11 +13,6 @@ function callback(entries) {
   });
 };
 
-
-
-
-
-
 // jQuery
 $(function () {
 
@@ -61,24 +25,6 @@ $(function () {
     $('body,html').animate({ scrollTop: position }, speed, 'swing');
     return false;
   });
-
-
-
-  // //スクロールアニメーションの設定
-  // let window_h = $(window).height();
-  // //スクロールイベント
-  // $(window).on("scroll", function () {
-  //   //スクロールの位置を取得する
-  //   let scroll_top = $(window).scrollTop();
-  //   $(".scroll").each(function () {
-  //     //各box要素のtopの位置を取得する
-  //     let elem_pos = $(this).offset().top;
-  //     //どのタイミングでフェードインさせるか
-  //     if (scroll_top >= elem_pos - window_h +100) {
-  //       $(this).addClass("show");　//特定の位置を超えたらクラスを追加
-  //     }
-  //   });
-  // });
 
 
 
