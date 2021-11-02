@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://kit.fontawesome.com/967f098682.js" crossorigin="anonymous"></script>
+  <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
   <header>
   <div id="headerContainer">
     <h1>Junya's Portfolio Site</h1>
